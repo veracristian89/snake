@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: lightgreen;
+}
+
+header{
+    background: bisque;
+}
+
+main{
+    .container{
+        background-color: aquamarine;
+        display: flex;
+        .squares{
+            width: 100px;
+            height: 100px;
+            &:nth-child(odd){
+                background-color: greenyellow;
+            }
+            &:nth-child(even){
+                background-color: green;
+            }
+        }
+    }
+}
