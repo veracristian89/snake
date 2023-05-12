@@ -1,11 +1,12 @@
 @mixin snake{
-    @extend .snake;
 
     &--head{
+        @extend .snake;
         background-color: brown;
     }
 
     &--body{
+        @extend .snake;
         background-color: grey;
     }
 }
