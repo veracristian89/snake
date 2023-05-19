@@ -4,24 +4,33 @@
 }
 
 body {
-  background: lightgreen;
+  background-color: aliceblue;
 }
 
 header {
-  background: bisque;
+  background-color: blanchedalmond;
 }
 
+main {
+  background-color: blueviolet;
+}
 main .container {
-  background-color: aquamarine;
   display: flex;
 }
 main .container .squares {
   width: 100px;
   height: 100px;
+  background-color: brown;
 }
 main .container .squares:nth-child(odd) {
   background-color: greenyellow;
 }
 main .container .squares:nth-child(even) {
   background-color: green;
+}
+main .container .squares.snake--head {
+  background-color: brown;
+}
+main .container .squares.snake--body {
+  background-color: grey;
 }/*# sourceMappingURL=styles.css.map */

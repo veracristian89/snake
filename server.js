@@ -4,8 +4,10 @@ const port = 3000
 
 console.log('Iniciando Servidor ..')
 
+app.use(express.static(__dirname + '/'))
+
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(__dirname + 'index.html')
 })
 
 app.listen(port, () => {
